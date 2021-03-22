@@ -41,8 +41,8 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/Gahshomar/gahshomar.git",
-                    "tag" : "v5.0.1" ,
-                    "commit" : "4aefda05a260567d521eae841b47abf93200be61"
+                    "tag" : "v5.0.2" ,
+                    "commit" : "7b5aa0637729fa53e0943f581c035147ad8e2ccd"
                 }
             ]
         }
