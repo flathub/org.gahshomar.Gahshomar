@@ -1,7 +1,7 @@
 {
     "app-id" : "org.gahshomar.Gahshomar",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "3.32",
+    "runtime-version" : "3.38",
     "sdk" : "org.gnome.Sdk",
     "command" : "gahshomar",
     "finish-args" : [
@@ -41,8 +41,8 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/Gahshomar/gahshomar.git",
-                    "tag" : "v5.0.0.rc1" ,
-                    "commit" : "72843cac12abb40205ef08b81edea4a299a1437b"
+                    "tag" : "v5.0.1" ,
+                    "commit" : "4aefda05a260567d521eae841b47abf93200be61"
                 }
             ]
         }
