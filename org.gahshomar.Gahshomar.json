@@ -1,26 +1,17 @@
 {
     "app-id" : "org.gahshomar.Gahshomar",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "3.38",
+    "runtime-version" : "44",
     "sdk" : "org.gnome.Sdk",
     "command" : "gahshomar",
     "finish-args" : [
         "--share=network",
         "--share=ipc",
-        "--socket=x11",
+        "--device=dri",
+        "--socket=fallback-x11",
         "--socket=wayland",
-        "--filesystem=xdg-run/dconf",
-        "--filesystem=~/.config/dconf:ro",
-        "--talk-name=ca.desrt.dconf",
-        "--env=DCONF_USER_CONFIG_DIR=.config/dconf"
+        "--metadata=X-DConf=migrate-path=/org/gahshomar/Gahshomar/"
     ],
-    "build-options" : {
-        "cflags" : "-O2 -g",
-        "cxxflags" : "-O2 -g",
-        "env" : {
-            "V" : "1"
-        }
-    },
     "cleanup" : [
         "/include",
         "/lib/pkgconfig",
@@ -44,6 +35,9 @@
                     "tag" : "v5.0.2" ,
                     "commit" : "7b5aa0637729fa53e0943f581c035147ad8e2ccd"
                 }
+            ],
+            "post-install":[
+                "rm ${FLATPAK_DEST}/share/icons/hicolor/48x48/apps/org.gahshomar.Gahshomar-no-icon.png"
             ]
         }
     ]
