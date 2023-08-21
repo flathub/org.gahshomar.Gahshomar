@@ -35,6 +35,9 @@
                     "tag" : "v5.0.2" ,
                     "commit" : "7b5aa0637729fa53e0943f581c035147ad8e2ccd"
                 }
+            ],
+            "post-install":[
+                "rm ${FLATPAK_DEST}/share/icons/hicolor/48x48/apps/org.gahshomar.Gahshomar-no-icon.png"
             ]
         }
     ]
