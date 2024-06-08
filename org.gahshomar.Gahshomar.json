@@ -1,7 +1,7 @@
 {
     "app-id" : "org.gahshomar.Gahshomar",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "44",
+    "runtime-version" : "46",
     "sdk" : "org.gnome.Sdk",
     "command" : "gahshomar",
     "finish-args" : [
@@ -34,6 +34,10 @@
                     "url" : "https://github.com/Gahshomar/gahshomar.git",
                     "tag" : "v5.0.2" ,
                     "commit" : "7b5aa0637729fa53e0943f581c035147ad8e2ccd"
+                },
+                {
+                    "type" : "patch",
+                    "path" : "fix_appdata.patch"
                 }
             ],
             "post-install":[
