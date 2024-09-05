@@ -1,10 +1,10 @@
 {
-    "app-id" : "org.gahshomar.Gahshomar",
-    "runtime" : "org.gnome.Platform",
-    "runtime-version" : "46",
-    "sdk" : "org.gnome.Sdk",
-    "command" : "gahshomar",
-    "finish-args" : [
+    "app-id": "org.gahshomar.Gahshomar",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "46",
+    "sdk": "org.gnome.Sdk",
+    "command": "gahshomar",
+    "finish-args": [
         "--share=network",
         "--share=ipc",
         "--device=dri",
@@ -12,7 +12,7 @@
         "--socket=wayland",
         "--metadata=X-DConf=migrate-path=/org/gahshomar/Gahshomar/"
     ],
-    "cleanup" : [
+    "cleanup": [
         "/include",
         "/lib/pkgconfig",
         "/man",
@@ -23,24 +23,20 @@
         "*.la",
         "*.a"
     ],
-    "modules" : [
+    "modules": [
         "shared-modules/libappindicator/libappindicator-gtk3-introspection-12.10.json",
         {
-            "name" : "gahshomar",
-            "buildsystem" : "meson",
-            "sources" : [
+            "name": "gahshomar",
+            "buildsystem": "meson",
+            "sources": [
                 {
-                    "type" : "git",
-                    "url" : "https://github.com/Gahshomar/gahshomar.git",
-                    "tag" : "v5.0.2" ,
-                    "commit" : "7b5aa0637729fa53e0943f581c035147ad8e2ccd"
-                },
-                {
-                    "type" : "patch",
-                    "path" : "fix_appdata.patch"
+                    "type": "git",
+                    "url": "https://github.com/Gahshomar/gahshomar.git",
+                    "tag": "v5.0.3",
+                    "commit": "78de5740aa03598d0c3c7fbc707baf9ba734bc04"
                 }
             ],
-            "post-install":[
+            "post-install": [
                 "rm ${FLATPAK_DEST}/share/icons/hicolor/48x48/apps/org.gahshomar.Gahshomar-no-icon.png"
             ]
         }
