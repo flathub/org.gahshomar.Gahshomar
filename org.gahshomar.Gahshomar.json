@@ -32,8 +32,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/Gahshomar/gahshomar.git",
-                    "tag": "v5.0.3.rc0",
-                    "commit": "d7ecc69462f7f00ccc574a29653ffb84fa6655d3"
+                    "tag": "v5.0.3",
+                    "commit": "78de5740aa03598d0c3c7fbc707baf9ba734bc04"
                 }
             ],
             "post-install": [
