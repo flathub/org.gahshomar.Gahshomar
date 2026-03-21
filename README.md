@@ -21,7 +21,3 @@ flatpak run org.gahshomar.Gahshomar
 git clone git@github.com:flathub/org.gahshomar.Gahshomar.git
 flatpak run org.flatpak.Builder build-dir --user --ccache --force-clean --install org.gahshomar.Gahshomar.json
 ```
-
----
-
-**Technologies**: GNOME, GTK3, Python
